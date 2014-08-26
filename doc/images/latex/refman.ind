@@ -1,0 +1,11 @@
+\begin{theindex}
+  \providecommand*\lettergroupDefault[1]{}
+  \providecommand*\lettergroup[1]{%
+      \par\textbf{#1}\par
+      \nopagebreak
+  }
+
+  \lettergroup{K}
+  \item {key\-\_\-map}, 3
+
+\end{theindex}

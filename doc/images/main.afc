@@ -1,0 +1,20 @@
+<!DOCTYPE AFC>
+<algorithm>
+  <branch>
+    <assign dest="result" src="true" />
+    <if cond="data в key_map" >
+      <branch>
+        <if cond="!(data &amp; 0x80)" >
+          <branch>
+            <process text="process_key()" />
+          </branch>
+          <branch/>
+        </if>
+      </branch>
+      <branch>
+        <assign dest="result" src="false" />
+        <assign dest="kbd.last_key" src="0" />
+      </branch>
+    </if>
+  </branch>
+</algorithm>
